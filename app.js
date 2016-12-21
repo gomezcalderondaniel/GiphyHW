@@ -1,3 +1,4 @@
+
 //Global Variables
 
 
@@ -33,6 +34,16 @@ var topics = [
  // $(".btn").on("click", function() {
 
 $(document).on("click", ".SNL", displayGifs);
+
+   $("#addCharacter").on("click", function(event) {
+       event.preventDefault();
+       var character = $("#newCharacterInput").val().trim();
+       topics.push(character);
+       createOrigButtons();
+       console.log(topics);
+       console.log(character);
+});
+
 createOrigButtons();
 
  function createOrigButtons(){
@@ -112,14 +123,7 @@ function displayGifs(){
     });
   });
 
-   $("#addCharacter").on("click", function(event) {
-       event.preventDefault();
-       var character = $("#newCharacterInput").val().trim();
-       topics.push(character);
-       createOrigButtons();
-       console.log(topics);
-       console.log(character);
-});
+
 
 
 
@@ -128,3 +132,7 @@ function displayGifs(){
 
 
 };
+
+
+
+
