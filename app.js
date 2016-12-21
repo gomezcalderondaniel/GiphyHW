@@ -86,8 +86,9 @@ function displayGifs(){
         gifDiv.append(printRating);
         gifDiv.append(gif);
       }
-});
+
 //Changing gif from still to aniamted//
+
   $("img").on("click", function(){
       console.log(this);
       var state = $(this).attr("data-name");
@@ -109,6 +110,7 @@ function displayGifs(){
     }
 
     });
+  });
 
    $("#addCharacter").on("click", function(event) {
        event.preventDefault();
