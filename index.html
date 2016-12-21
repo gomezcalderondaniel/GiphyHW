@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<title>Your Favorite SNL Characters</title>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+ <!-- Bootstrap -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="style.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+</style>
+
+</head>
+
+
+<body>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Live from New York... It's your favorite Saturday Night Live characters!</h1>
+    <p class="lead">Click the buttons below to see gifs of your favorite SNL characters!</p>
+  </div>
+</div>
+
+  <div class="container col-md-12" id="buttonContainer">
+
+  </div>
+
+  <div class="container col-md-12" id="main">
+  <div class="container col-md-6" id="gifContainer">
+  </div>
+
+  <div class="container col-md-6" id="inputContainer">
+    <form>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Add a character:</label>
+        <input type="text" class="form-control" id="newCharacterInput" placeholder="">
+      </div>
+        <input id="addCharacter" type="submit" value="Submit">
+
+
+        <!-- <button id="submit">Submit</button> -->
+    </form>
+
+  </div>
+
+  </div>
+
+
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
