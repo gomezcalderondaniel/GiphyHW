@@ -62,7 +62,7 @@ function displayGifs(){
 
       $("#gifContainer").empty();
       var skit = $(this).data("name");
-      var queryURL = "http://api.giphy.com/v1/gifs/search?q="+skit+"&api_key=dc6zaTOxFJmzC";
+      var queryURL = "https://api.giphy.com/v1/gifs/search?q="+skit+"&api_key=dc6zaTOxFJmzC";
       console.log(skit);
       console.log(queryURL);
 
