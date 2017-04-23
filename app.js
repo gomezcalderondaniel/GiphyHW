@@ -82,10 +82,10 @@ function displayGifs(){
         console.log(stillImageURL);
         console.log(animatedImageURL);
 
-        var gifDiv = $("<div class='item .col-md-4 box'>");
+        var gifDiv = $("<div class='item .col-md-3 box'>");
         var rating = results[i].rating;
         console.log(rating);
-        var printRating = $("<h3>").text("Rating: " + rating);
+        var printRating = $("<h3 style='padding-left: 10px'>").text("Rating: " + rating);
         var gif = $("<img>");
         gif.attr("src", stillImageURL);
         gif.attr("data-animate", animatedImageURL);
